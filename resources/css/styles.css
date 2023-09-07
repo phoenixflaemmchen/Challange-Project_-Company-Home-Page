@@ -104,5 +104,38 @@ header {
 /* about-us section */
 
 #about-us {
-    height: fit-content;
+    background-image: url(/resources/pics/about-us-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+#about-us > h2 {
+    text-align: center;
+    padding: 4rem;
+}
+
+#about-us #services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 4rem;
+}
+
+#about-us #services .service {
+    width: 20rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3rem 3rem auto;
+}
+
+#about-us #services .service h2 {
+    grid-row: 1;
+}
+
+#about-us #services .service p {
+    grid-row: 3;
 }
