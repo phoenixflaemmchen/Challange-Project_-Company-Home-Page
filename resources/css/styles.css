@@ -21,8 +21,10 @@ html {
 }
 
 .container {
-    background-color: var(--primary-background-color);
     border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* header section */
@@ -77,7 +79,6 @@ header {
     left: 15rem;
     width: 40rem;
     height: fit-content;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 #hero-banner #hero-banner-box h1,
@@ -160,3 +161,66 @@ header {
     text-align: center;
 }
 
+/* team section */
+
+#team {
+    background-image: url(/resources/pics/team-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem;
+    padding-top: 0;
+}
+
+#team h3 {
+    text-align: center;
+    padding: 4rem;
+}
+
+#team #team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#team #team-members .team-member {
+    height: 50rem;
+    width: 20rem;
+}
+
+#team #team-members .team-member .img-container {
+    height: 30rem;
+    width: 20rem;
+    object-fit: center;
+}
+
+#team #team-members .team-member .img-container img {
+    height: 30rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+#team #team-members .team-member .team-name {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#team #team-members .team-member .team-name-and-position-and-img-container {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#team #team-members .team-member .team-name-and-position-and-img-container .team-name h4{
+    padding: 0.5rem;
+}
+
+#team #team-members .team-member .team-name-and-position-and-img-container .team-position {
+    padding: 0.5rem;
+}
+
+#team #team-members .team-member .team-background p{
+    padding: 0.5rem;
+}
